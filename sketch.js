@@ -19,7 +19,7 @@ function draw() {
   
   if(wall.x-bullet.x < (bullet.width+wall.width)/2){
     bullet.velocityX = 0;
-    math = 0.5*weight*speed*speed/thickness*thickness*thickness;
+    math = 0.5*weight*speed*speed/(thickness*thickness*thickness);
     console.log(math);
     if(math < 10){
       bullet.shapeColor = color(0,255,0);
